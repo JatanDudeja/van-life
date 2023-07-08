@@ -11,19 +11,18 @@ export default function App(){
   return (
     <BrowserRouter>
       <header>
-        <Link className = 'van-life' to='/'>#VanLife</Link>
-        <nav className='nav-bar'>
-          <Link className = 'about-us-link'to = '/about'>AboutUs</Link>
-          <Link className='about-us-link' to="/vans">Vans</Link>
+        <Link className="site-logo" to="/">#VanLife</Link>
+        <nav>
+          <Link to="/about">About</Link>
+          <Link to="/vans">Vans</Link>
         </nav>
       </header>
       <Routes>
-      <Route path = "/" element = {<Home/>}/>
-      <Route path = '/about' element = {<About/>}/>
-      <Route path = '/vans' element = {<Vans/>}/>
-      <Route path = '/vans/:id' element = {<VansDetails/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VansDetails />} />
       </Routes>
-      <footer><p><span></span>©2023 #VANSLIFE</p></footer>
     </BrowserRouter>
   )
 }
