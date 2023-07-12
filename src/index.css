@@ -768,8 +768,7 @@ img.graph {
 }
 
 
-@media only screen and (max-width: 390px) {
-  /* For mobile phones: */
+/* @media only screen and (max-width: 390px) {
   html, body {
     margin: 0;
     padding: 0;
@@ -777,4 +776,17 @@ img.graph {
     font-family: "Inter", sans-serif;
     width: 104%;
   }
+} */
+
+
+@media only screen and (max-width: 404px) {
+  /* For mobile phones: */
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
+    width: 110%;
+  }
 }
+
